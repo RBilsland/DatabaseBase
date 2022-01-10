@@ -21,5 +21,5 @@ This is a very basic C# solution to show an example of implementing a database a
 - The UI project contains the usage of the Core project and as such it is a dependancy to the UI project.
 - In Startup.cs the DemoDbContext service is added and a using to MyApplication.Core.Data.Demo is included so that the DbContext class can be found.
 - It is in the definition of the DemoDbContext service that the Database connection string is retrieved from AppSettings.json to point at the Demo database.
-- It is in the index code behind page (Pages\Index.razor.cs) that a private reference to the DemoDbContext is Injected and in the pages OnInitialized method that it is used to retrieve all the rows from the Example table into a public list variable. Again appropriate Usings are included to .Demo and .Demo.Models so that calsses can be found.
+- It is in the index code behind page (Pages\Index.razor.cs) that a private reference to the DemoDbContext is Injected and in the pages OnInitialized method that it is used to retrieve all the rows from the Example table into a public list variable. Again appropriate Usings are included to .Demo and .Demo.Models so that classes can be found.
 - In the index page itself (Pages\Index.razor) the public list variable is iterated through to display any results.
