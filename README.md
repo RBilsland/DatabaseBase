@@ -14,7 +14,7 @@ This is a very basic C# solution to show an example of implementing a database a
 ## An Explination Of Whats Happening
 
 - The Core project contains the DbContext to access the Demo database and any associated Models.
-- These are organised in a logical manner with everything to do with data in the Data folder, that contains a Demo folder for the Demo database access, this contains the DemoDbContext class and a Models folder for the database table models.
+- These are organised in a logical manner with everything to do with data in the Data folder, that contains a Demo folder for the Demo database access, this contains the DemoDbContext class and a Models folder for the database table model classes.
 - Inside the Data\Demo\DemoDbContext.cs there is the Public Virtual definition for the Example table and the rows in the OnModelCreating method that references the Example table, defines it's index and also inserts seed data.
 - If you are looking to link tables together (Primary / Foreign Key) then I suggest using data annotations. A number of use cases are discussed here https://www.entityframeworktutorial.net/code-first/foreignkey-dataannotations-attribute-in-code-first.aspx
 - The \Data\Demo\Models\Example.cs model doesn't contain much, just an Id and a Description but does contain the data annotations to setup a primary key.
