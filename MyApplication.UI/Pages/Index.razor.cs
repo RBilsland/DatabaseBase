@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Components;
-using MyApplication.Core.Data.Demo;
-using MyApplication.Core.Data.Demo.Models;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace MyApplication.UI.Pages
+﻿namespace MyApplication.UI.Pages
 {
+    using Microsoft.AspNetCore.Components;
+    using MyApplication.Core.Data.Demo;
+    using MyApplication.Core.Data.Demo.Models;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public partial class Index : ComponentBase
     {
         [Inject]
