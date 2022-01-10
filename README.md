@@ -9,3 +9,9 @@ This is a very basic C# solution to show an example of implementing a database a
   - Run `add-migration CreateExampleTable` to create the database migration files for the included Example table.
   - Run `update-database` to deploy the Example table to the Demo database.
   - **NOTE** - an explanation of the commands can be found at https://www.entityframeworktutorial.net/efcore/pmc-commands-for-ef-core-migration.aspx
+- Running the solution should present a single Server Side Blazor page containing a welcome message and the single row from the Example table.
+
+## An Explination Of Whats Happening
+
+- The Core project contains the DbContext to access the Demo database and any associated Models.
+- These are organised in a logical manner with everything to do with data in the Data folder, that contains a Demo folder for the Demo database access, this contains the DemoDbContext class and a Models folder for the database table models.
